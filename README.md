@@ -2,24 +2,7 @@
 
 This directory supports the KAUST Integrated Photonics Laboratory (IPL) article "Integrated van der Waals Waveguides for All-Optical Nonlinear Photonic Circuits" (accepted by Nature Communications). It provides the image-classification training framework used for the optical activation function experiments associated with the work.
 
-This directory is organized as one coherent training framework for MNIST and CIFAR10 image classification experiments. The user chooses the dataset, model architecture, and training mode from command-line arguments instead of switching between duplicated scripts or subdirectories.
-
-## What Each File Does
-
-```text
-train_image_classifier.py        trains one selected model/dataset/mode combination
-evaluate_image_classifier.py     evaluates a saved checkpoint on the selected dataset
-utils/dataset_loaders.py         builds MNIST and CIFAR10 train/validation/test/calibration loaders
-utils/resnet18_classifier.py     defines the ResNet18 classifier, including QAT-ready quant/dequant stubs
-utils/vgg16_classifier.py        defines the VGG16 classifier, including QAT-ready quant/dequant stubs
-utils/cutout_augmentation.py     implements Cutout augmentation used for CIFAR10 training
-checkpoint/                      stores trained checkpoints
-dataset/                         stores downloaded datasets; kept empty before first run
-```
-
-The old duplicated QAT subdirectory and the old model-specific training scripts are intentionally removed. All combinations now run through the two root entry points above.
-
-## Supported Choices
+## Supported Tests
 
 Datasets:
 
