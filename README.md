@@ -1,6 +1,6 @@
 # MNIST/CIFAR10 FP32 and QAT Classifier Training
 
-This directory supports the KAUST Integrated Photonics Laboratory (IPL) article "Integrated van der Waals Waveguides for All-Optical Nonlinear Photonic Circuits" (accepted by Nature Communications). It provides the image-classification training framework used for the optical activation function experiments associated with the work.
+This directory supports the KAUST Integrated Photonics Laboratory (IPL) article _"Integrated van der Waals Waveguides for All-Optical Nonlinear Photonic Circuits"_ (accepted by Nature Communications). It provides the image-classification training framework used for the optical activation function experiments associated with the work.
 
 ## Supported Tests
 
