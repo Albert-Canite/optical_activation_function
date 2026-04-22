@@ -132,19 +132,4 @@ Important arguments:
 python evaluate_image_classifier.py --help
 ```
 
-Important arguments:
 
-- `--dataset {mnist,cifar10}` selects the dataset when `--checkpoint` is not explicit.
-- `--model {resnet18,vgg16}` selects the model when `--checkpoint` is not explicit.
-- `--qat` loads the QAT checkpoint naming pattern and converts it before evaluation.
-- `--checkpoint` evaluates a specific checkpoint path.
-- `--batch-size` controls evaluation batch size.
-- `--data-dir` controls where datasets are loaded from.
-
-## Notes
-
-- CIFAR10 uses random crop, horizontal flip, normalization, and Cutout by default during training.
-- MNIST uses random crop and normalization by default during training.
-- Evaluation disables training augmentation.
-- QAT evaluation runs on CPU because PyTorch quantized inference is CPU-oriented in this setup.
-- If the system default `python` cannot import PyTorch, use the conda Python/environment that has `torch` installed.
