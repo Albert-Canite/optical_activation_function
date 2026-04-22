@@ -1,0 +1,36 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+.env
+
+# IDE/editor local settings
+.idea/
+.vscode/
+
+# Training artifacts
+checkpoint/*
+!checkpoint/.gitkeep
+*.pt
+*.pth
+*.ckpt
+
+# Downloaded datasets
+dataset/*
+!dataset/.gitkeep
+data/*
+!data/.gitkeep
+
+# Experiment logs
+wandb/
+runs/
+logs/
+
+# OS metadata
+.DS_Store
+Thumbs.db
